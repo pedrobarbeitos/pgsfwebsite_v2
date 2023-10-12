@@ -1,11 +1,10 @@
 .containerMain {
     width: 100%;
     height: 100%;
-    padding: 20px 30px 20px 30px;
-    z-index: 1;
+    padding: 20px 30px 30px 30px;
     position: absolute;
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    overflow-x: hidden;
+    
 }

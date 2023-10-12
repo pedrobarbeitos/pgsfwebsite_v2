@@ -8,7 +8,7 @@ export default function Home() {
     <div className="containerMain">
       <Navbar/> 
       <Gallery/> 
-      <Link href=''>client login</Link>   
+      <Link href=''>client login</Link> 
     </div>
   )
 }

@@ -10,7 +10,7 @@ function ImagesCard({item}: Props) {
         <Image 
         src= {item.img}
         alt= {item.desc}
-        fill
+        fill = {true}
         object-fit= 'contain'
         placeholder='blur'
         blurDataURL='grey'

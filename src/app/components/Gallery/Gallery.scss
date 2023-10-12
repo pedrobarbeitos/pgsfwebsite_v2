@@ -1,8 +1,9 @@
 .galleryContainer {
-    gap: 20px;
     display: flex;
-    justify-content: center;
+    gap: 20px;
+    align-content: flex-start;
     position: relative;
-    overflow-x: hidden;
-
+    overflow: hidden;
+    
+    
 }

@@ -17,6 +17,8 @@ const images = [
      desc: 'Casa em Viana Photo 04 '}, 
 ]
 
+
+
 type Props = {}
 
 function Gallery({}: Props) {
