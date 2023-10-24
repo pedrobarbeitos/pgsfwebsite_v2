@@ -1,6 +1,10 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect, useRef } from 'react';
 import './Gallery.scss'
 import ImagesCard from '../ImagesCard/ImagesCard'
+
+
 
 const images = [
     {id: 1,
@@ -15,20 +19,44 @@ const images = [
     {id: 4,
      img: '/A04.jpg',
      desc: 'Casa em Viana Photo 04 '}, 
+    {id: 5,
+      img: '/A05.jpg',
+      desc: 'Ilfracombe Avenue'}, 
 ]
 
 
 
-type Props = {}
+function Gallery() {
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
-function Gallery({}: Props) {
+  useEffect(() => {
+    const scrollContainer = scrollContainerRef.current;
+
+    const handleWheel = (evt: WheelEvent) => {
+      evt.preventDefault();
+      if (scrollContainer) {
+        scrollContainer.scrollLeft += evt.deltaY;
+      }
+    };
+
+    if (scrollContainer) {
+      scrollContainer.addEventListener('wheel', handleWheel);
+    }
+
+    return () => {
+      if (scrollContainer) {
+        scrollContainer.removeEventListener('wheel', handleWheel);
+      }
+    };
+  }, []); 
+
   return (
-    <div className='galleryContainer'>
-    {images.map(item => (
-<ImagesCard item={item} key={item.id} />
-    ))}
+    <div ref={scrollContainerRef} className='galleryContainer'>
+      {images.map((item) => (
+        <ImagesCard item={item} key={item.id} />
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default Gallery
+export default Gallery;

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import './Navbar.scss'
+import './navbar.scss'
 
 type Props = {}
 

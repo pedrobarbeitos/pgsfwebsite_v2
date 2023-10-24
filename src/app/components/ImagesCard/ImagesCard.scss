@@ -1,7 +1,19 @@
 .imageContainer {
-    display: flex;
-    align-items: center;
-    height: 600px;
-    min-width: 900px;
+    
+  
+    min-width: 800px;
     position: relative;
+    overflow: hidden;
+    display: inline;
+    
+    
+}
+
+.imageContainer img{
+
+    object-fit: contain;
+    
+    
+    
+
 }
