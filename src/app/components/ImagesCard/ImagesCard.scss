@@ -2,16 +2,18 @@
     
   
     min-width: 800px;
+    max-width: 800px;
     position: relative;
     overflow: hidden;
-    display: inline;
+    display: inline-block;
+    background-color: grey;
     
     
 }
 
 .imageContainer img{
 
-    object-fit: contain;
+    object-fit: cover;
     
     
     
