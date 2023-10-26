@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect, useRef } from 'react';
 import './Gallery.scss'
-import ImagesCard from '../ImagesCard/ImagesCard'
+import ImagesCard from '../WorksCards/ImagesCard'
 
 
 

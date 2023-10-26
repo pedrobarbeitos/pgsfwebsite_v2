@@ -1,6 +1,6 @@
 
 import './page.scss'
-import Gallery from './components/Gallery/Gallery'
+import Gallery from './components/GalleryWorks/Gallery'
 
 export default function Home() {
   return (
