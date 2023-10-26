@@ -1,14 +1,27 @@
-.galleryContainer {
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0 ;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.galleryStudio {
     display: flex;
     gap: 20px;
     align-content: flex-start;
     position: relative;
     overflow: hidden;
     cursor: none;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    
 }
 
 @media only screen and (max-width: 900px) {
-    .galleryContainer {
+    .galleryStudio {
       
       width: 100%;
       flex-wrap: wrap;

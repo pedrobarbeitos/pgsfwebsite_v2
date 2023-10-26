@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './GalleryStudio.scss'
 import ImageCard from '../ImageCard/ImageCard'
+import TextCard from '../TextCard/TextCard';
 
 
 const profileImages = [
@@ -13,6 +14,12 @@ const profileImages = [
      img: '/A52.jpg',
      desc: 'Pedro profile picture '}, 
 ]
+
+
+const textCard01 = {
+  title: 'About us',
+  desc: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio&apos;s work is centred around finding a considered solution to our client&apos;s brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design."
+}
 
 
 
@@ -74,11 +81,13 @@ function GalleryStudio() {
   }, [isDragging, startX, scrollLeft]);
 
   return (
-    <div ref={scrollContainerRef} className='galleryContainer'>
+    <div ref={scrollContainerRef} className='galleryStudio'>
+      <TextCard title={textCard01.title} description={textCard01.desc}/>
       {profileImages.map((item) => (
         <ImageCard item={item} key={item.id} />
       ))}
-      
+      <TextCard title={textCard01.title} description={textCard01.desc}/>
+
     </div>
   );
 };

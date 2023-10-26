@@ -1,9 +1,9 @@
 .imageCard {
-    min-height: 675px;
+    max-height: 675px;
+    min-width: 500px;
     aspect-ratio: 6 / 8;
     position: relative;
     overflow: hidden;
-    background-color: grey;
 }
 
 .imageCard img{
@@ -17,9 +17,10 @@
       min-height: 100%;
       flex-wrap: wrap;
       flex-shrink: 1;
+      
     };
 
     .imageCard img{
-      object-fit: contain;
+      object-fit: cover;
   };    
   }

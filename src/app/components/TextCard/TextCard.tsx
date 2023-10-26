@@ -2,14 +2,14 @@ import React from 'react'
 import './TextCard.scss'
 
 
-type Props = {item: any}
+type Props = {title: any, description: any}
 
-function TextCard({item}: Props) {
+function TextCard({title, description}: Props) {
   return (
     <div className='textCard'>
         
-        <h1>{item.title}</h1>
-        <p>{item.description}</p>
+        <h1>{title}</h1>
+        <p>{description}</p>
 
     </div>
   )
