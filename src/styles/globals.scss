@@ -12,6 +12,7 @@ body {
     color: black;
     font-smooth: always;
     cursor: none;
+    margin: 10px 15px;
 }
 
 a{
@@ -48,10 +49,10 @@ h2 {
 }
  
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: black; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: red; 
+  background: black; 
 }
