@@ -1,0 +1,26 @@
+.imageContainer {
+    min-width: 900px;
+    aspect-ratio: 8 / 6;
+    position: relative;
+    overflow: hidden;
+}
+
+.imageContainer img{
+    object-fit: cover;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+    .imageContainer {
+      aspect-ratio: 8 / 6;
+      min-width: 100%;
+      flex-wrap: wrap;
+      flex-shrink: 1;
+      object-fit: cover;
+    };
+
+    .imageContainer img{
+      object-fit: contain;
+  };    
+  }

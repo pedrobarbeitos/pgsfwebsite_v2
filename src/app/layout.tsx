@@ -1,6 +1,9 @@
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import '@/styles/styles.sass'
+import Navbar from './components/Navbar/navbar'
+import CustomCursor from './components/Cursor/Cursor'
+
 
 const roboto = Roboto({ 
   subsets: ['latin'],
@@ -19,7 +22,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      
+      <body className={roboto.className}>
+        <div className="layoutContainer">
+          <CustomCursor/>
+          <Navbar/>
+        </div>
+        {children}
+      </body>
     </html>
   )
 }

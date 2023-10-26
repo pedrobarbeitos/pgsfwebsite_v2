@@ -1,25 +1,52 @@
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0 ;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html,
+html {
+  height: 100vh;
+  font-smooth: always;
+  cursor: none;
+}
+
 body {
     
     overflow-x: hidden;
     background-color: white;
     color: black;
-    font-smooth: always;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
+    box-sizing: border-box;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 a{
     text-decoration: none;
     color: inherit;
+    cursor: none;
 }
 
 a:hover{
-    color: red;
+    
+    color: rgb(167, 164, 164);
+    cursor: none;
 }
 
 
@@ -44,10 +71,10 @@ h2 {
 }
  
 ::-webkit-scrollbar-thumb {
-  background: red; 
+  background: black; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: red; 
+  background: black; 
 }
