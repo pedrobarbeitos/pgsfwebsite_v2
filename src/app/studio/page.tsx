@@ -1,10 +1,13 @@
 import React from 'react'
+import GalleryStudio from '../components/GalleryStudio/GalleryStudio'
 
 type Props = {}
 
 function studio({}: Props) {
   return (
-    <div>studio</div>
+    <div className="containerMain">
+      <GalleryStudio/>
+    </div>
   )
 }
 

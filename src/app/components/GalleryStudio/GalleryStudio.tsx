@@ -1,32 +1,22 @@
 'use client'
 
 import React, { useState, useEffect, useRef } from 'react';
-import './GalleryInfo.scss'
-import ImagesCard from '../WorksCards/ImagesCard'
+import './GalleryStudio.scss'
+import ImageCard from '../ImageCard/ImageCard'
 
 
-
-const images = [
-    {id: 1,
-     img: '/A01.jpg',
-     desc: 'Casa em Viana Photo 01 '},
-    {id: 2,
-     img: '/A02.jpg',
-     desc: 'Casa em Viana Photo 02 '}, 
-    {id: 3,
-     img: '/A03.jpg',
-     desc: 'Casa em Viana Photo 03 '}, 
-    {id: 4,
-     img: '/A04.jpg',
-     desc: 'Casa em Viana Photo 04 '}, 
-    {id: 5,
-      img: '/A05.jpg',
-      desc: 'Ilfracombe Avenue'}, 
+const profileImages = [
+    {id: 51,
+     img: '/A51.jpg',
+     desc: 'Sara profile picture '},
+    {id: 52,
+     img: '/A52.jpg',
+     desc: 'Pedro profile picture '}, 
 ]
 
 
 
-function Gallery() {
+function GalleryStudio() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
   const [isDragging, setIsDragging] = useState(false);
   const [startX, setStartX] = useState(0);
@@ -85,11 +75,12 @@ function Gallery() {
 
   return (
     <div ref={scrollContainerRef} className='galleryContainer'>
-      {images.map((item) => (
-        <ImagesCard item={item} key={item.id} />
+      {profileImages.map((item) => (
+        <ImageCard item={item} key={item.id} />
       ))}
+      
     </div>
   );
 };
 
-export default Gallery;
+export default GalleryStudio;

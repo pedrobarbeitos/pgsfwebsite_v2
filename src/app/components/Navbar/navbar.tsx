@@ -8,7 +8,7 @@ function Navbar({}: Props) {
   return (
     <div className='navbar'>
         <div className='navbarLeft'>
-            <Link href='/'>pgsfarchitects</Link>
+            <Link href='/'><b>pgsf</b>architects</Link>
         </div>
         <div className='navbarRight'>
             <Link href='/'>work</Link>
