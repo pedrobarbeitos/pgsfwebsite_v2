@@ -11,15 +11,19 @@ body {
     background-color: white;
     color: black;
     font-smooth: always;
+    cursor: none;
 }
 
 a{
     text-decoration: none;
     color: inherit;
+    cursor: none;
 }
 
 a:hover{
-    color: red;
+    
+    color: rgb(167, 164, 164);
+    cursor: none;
 }
 
 

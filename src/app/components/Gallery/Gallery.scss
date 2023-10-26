@@ -1,10 +1,25 @@
 .galleryContainer {
     display: flex;
     gap: 20px;
-    min-height: 600px;
     align-content: flex-start;
     position: relative;
     overflow: hidden;
-   
+    cursor: none;
     
 }
+
+@media only screen and (max-width: 900px) {
+    .galleryContainer {
+      
+      width: 100%;
+      min-height: 2000px;
+      flex-wrap: wrap;
+      overflow-y: auto;
+      overflow: hidden;
+      padding-top: 20px;
+      
+      
+
+
+    }
+  }

@@ -12,7 +12,7 @@ function ImagesCard({item}: Props) {
         alt= {item.desc}
         fill={true}
         placeholder='blur'
-        blurDataURL='grey'
+        blurDataURL= {item.img}
         />
     </div>
   )
