@@ -2,9 +2,9 @@
     min-height: 675px;
     max-width: 500px;
     min-width: 450px;
-    
     position: relative;
     overflow: hidden;
+    margin-right: 20px;
     
 }
 
@@ -15,6 +15,7 @@
       min-height: 100%;
       flex-wrap: wrap;
       flex-shrink: 1;
+      margin-right: 0px;
     };
 
   }

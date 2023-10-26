@@ -6,6 +6,8 @@ import ImageCard from '../ImageCard/ImageCard'
 import TextCard from '../TextCard/TextCard';
 
 
+
+
 const profileImages = [
     {id: 51,
      img: '/A51.jpg',
@@ -17,9 +19,31 @@ const profileImages = [
 
 
 const textCard01 = {
-  title: 'About us',
-  desc: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio&apos;s work is centred around finding a considered solution to our client&apos;s brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design."
+  title: 'about us',
+  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
+  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
 }
+
+const textCard02 = {
+  title: 'our approach',
+  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
+  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
+}
+
+const textCard03 = {
+  title: 'sara feio',
+  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
+  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
+}
+
+const textCard04 = {
+  title: 'pedro barbeitos gomes',
+  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
+  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
+}
+
+
+
 
 
 
@@ -82,11 +106,14 @@ function GalleryStudio() {
 
   return (
     <div ref={scrollContainerRef} className='galleryStudio'>
-      <TextCard title={textCard01.title} description={textCard01.desc}/>
+      <TextCard title={textCard01.title} description1={textCard01.desc1} description2={textCard01.desc2}/>
+      <TextCard title={textCard02.title} description1={textCard02.desc1} description2={textCard02.desc2}/>
       {profileImages.map((item) => (
         <ImageCard item={item} key={item.id} />
       ))}
-      <TextCard title={textCard01.title} description={textCard01.desc}/>
+      <TextCard title={textCard03.title} description1={textCard03.desc1} description2={textCard02.desc2}/>
+      <TextCard title={textCard04.title} description1={textCard04.desc1} description2={textCard02.desc2}/>
+      
 
     </div>
   );
