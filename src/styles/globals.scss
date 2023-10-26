@@ -4,15 +4,23 @@
     margin: 0;
 }
 
-html,
+html {
+  height: 100vh;
+  font-smooth: always;
+  cursor: none;
+}
+
 body {
     
     overflow-x: hidden;
     background-color: white;
     color: black;
-    font-smooth: always;
-    cursor: none;
-    margin: 10px 15px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
 a{

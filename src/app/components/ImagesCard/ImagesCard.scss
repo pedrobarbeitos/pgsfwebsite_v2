@@ -1,7 +1,7 @@
 .imageContainer {
     
   
-    min-width: 800px;
+    min-width: 900px;
     aspect-ratio: 8 / 6;
     position: relative;
     overflow: hidden;
@@ -18,7 +18,7 @@
 
 @media only screen and (max-width: 900px) {
     .imageContainer {
-      background-color: red;
+      
       aspect-ratio: 8 / 6;
       
       min-width: 100%;

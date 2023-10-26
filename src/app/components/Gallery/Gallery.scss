@@ -4,7 +4,6 @@
     align-content: flex-start;
     position: relative;
     overflow: hidden;
-    
     cursor: none;
     
 }
@@ -13,14 +12,9 @@
     .galleryContainer {
       
       width: 100%;
-      min-height: 2000px;
       flex-wrap: wrap;
       overflow-y: auto;
       overflow: hidden;
       
-      
-      
-
-
     }
   }

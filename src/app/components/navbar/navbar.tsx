@@ -11,9 +11,9 @@ function Navbar({}: Props) {
             <Link href='/'>pgsfarchitects</Link>
         </div>
         <div className='navbarRight'>
-            <Link href=''>work</Link>
-            <Link href=''>studio</Link>
-            <Link href=''>contact</Link>
+            <Link href='/'>work</Link>
+            <Link href='/method'>method</Link>
+            <Link href='/studio'>studio</Link>
         </div>
     </div>
   )
