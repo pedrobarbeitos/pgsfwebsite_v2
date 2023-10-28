@@ -1,14 +1,15 @@
-import React from 'react'
-import GalleryStudio from '../components/GalleryStudio/GalleryStudio'
+import React from "react";
+import GalleryStudio from "../components/GalleryStudio/GalleryStudio";
+import "./page.scss";
 
-type Props = {}
+type Props = {};
 
 function studio({}: Props) {
   return (
     <div className="containerMain">
-      <GalleryStudio/>
+      <GalleryStudio />
     </div>
-  )
+  );
 }
 
-export default studio
+export default studio;
