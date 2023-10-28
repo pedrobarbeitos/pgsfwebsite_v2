@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Gallery.scss'
 import ImagesCard from '../WorksCards/ImagesCard'
+import Image from 'next/image';
 
 
 
@@ -86,7 +87,15 @@ function Gallery() {
   return (
     <div ref={scrollContainerRef} className='galleryContainer'>
       {images.map((item) => (
-        <ImagesCard item={item} key={item.id} />
+                <Image 
+                src= {item.img}
+                alt= {item.desc}
+                className='image'
+                width={800}
+                height={800}
+                placeholder='blur'
+                blurDataURL= {item.img}
+                />
       ))}
     </div>
   );
