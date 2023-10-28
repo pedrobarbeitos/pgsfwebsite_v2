@@ -88,6 +88,7 @@ function Gallery() {
     <div ref={scrollContainerRef} className='galleryContainer'>
       {images.map((item) => (
                 <Image 
+                key={item.id}
                 src= {item.img}
                 alt= {item.desc}
                 className='image'
