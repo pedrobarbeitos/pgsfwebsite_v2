@@ -90,19 +90,11 @@ function Gallery() {
                 <Image 
                 src= {item.img}
                 alt= {item.desc}
-                
+                className='image'
                 width={800}
-                height={600}
+                height={800}
                 placeholder='blur'
                 blurDataURL= {item.img}
-                style={{
-                        
-                        position: "relative",
-                        height: "auto",
-                        width: "auto",
-                        overflow: "hidden",
-                        flexShrink: 0,
-                      }}
                 />
       ))}
     </div>
