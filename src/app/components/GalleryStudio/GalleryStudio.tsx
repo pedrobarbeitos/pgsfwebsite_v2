@@ -1,51 +1,45 @@
-'use client'
+"use client";
 
-import React, { useState, useEffect, useRef } from 'react';
-import './GalleryStudio.scss'
-import ImageCard from '../ImageCard/ImageCard'
-import TextCard from '../TextCard/TextCard';
-
-
-
+import React, { useState, useEffect, useRef } from "react";
+import "./GalleryStudio.scss";
+import TextCard from "../TextCard/TextCard";
+import Image from "next/image";
 
 const profileImages = [
-    {id: 51,
-     img: '/A51.jpg',
-     desc: 'Sara profile picture '},
-    {id: 52,
-     img: '/A52.jpg',
-     desc: 'Pedro profile picture '}, 
-]
-
+  { id: 51, img: "/A51.jpg", desc: "Sara profile picture " },
+  { id: 52, img: "/A52.jpg", desc: "Pedro profile picture " },
+];
 
 const textCard01 = {
-  title: 'about us',
-  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
-  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
-}
+  name: "about us",
+  title: "",
+  desc1:
+    "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations.",
+  desc2:
+    "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away.",
+  desc3:
+    "We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
+};
 
 const textCard02 = {
-  title: 'our approach',
-  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
-  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
-}
+  name: "sara feio",
+  title: "BArch(Hons) DipArch ARB",
+  desc1: "",
+  desc2:
+    "Sara founded PGSF Architects with Pedro in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+  desc3:
+    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+};
 
 const textCard03 = {
-  title: 'sara feio',
-  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
-  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
-}
-
-const textCard04 = {
-  title: 'pedro barbeitos gomes',
-  desc1: "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations. Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
-  desc2: "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away. We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively."
-}
-
-
-
-
-
+  name: "pedro barbeitos gomes",
+  title: "BArch(Hons) DipArch ARB RIBA",
+  desc1: "",
+  desc2:
+    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+  desc3:
+    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+};
 
 function GalleryStudio() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -57,7 +51,6 @@ function GalleryStudio() {
     const scrollContainer = scrollContainerRef.current;
 
     const handleWheel = (evt: WheelEvent) => {
-      
       if (scrollContainer) {
         scrollContainer.scrollLeft += evt.deltaY;
       }
@@ -86,37 +79,69 @@ function GalleryStudio() {
     };
 
     if (scrollContainer) {
-      scrollContainer.addEventListener('wheel', handleWheel);
-      scrollContainer.addEventListener('mousedown', handleMouseDown);
-      scrollContainer.addEventListener('mouseleave', handleMouseLeave);
-      scrollContainer.addEventListener('mouseup', handleMouseUp);
-      scrollContainer.addEventListener('mousemove', handleMouseMove);
+      scrollContainer.addEventListener("wheel", handleWheel);
+      scrollContainer.addEventListener("mousedown", handleMouseDown);
+      scrollContainer.addEventListener("mouseleave", handleMouseLeave);
+      scrollContainer.addEventListener("mouseup", handleMouseUp);
+      scrollContainer.addEventListener("mousemove", handleMouseMove);
     }
 
     return () => {
       if (scrollContainer) {
-        scrollContainer.removeEventListener('wheel', handleWheel);
-        scrollContainer.removeEventListener('mousedown', handleMouseDown);
-        scrollContainer.removeEventListener('mouseleave', handleMouseLeave);
-        scrollContainer.removeEventListener('mouseup', handleMouseUp);
-        scrollContainer.removeEventListener('mousemove', handleMouseMove);
+        scrollContainer.removeEventListener("wheel", handleWheel);
+        scrollContainer.removeEventListener("mousedown", handleMouseDown);
+        scrollContainer.removeEventListener("mouseleave", handleMouseLeave);
+        scrollContainer.removeEventListener("mouseup", handleMouseUp);
+        scrollContainer.removeEventListener("mousemove", handleMouseMove);
       }
     };
   }, [isDragging, startX, scrollLeft]);
 
   return (
-    <div ref={scrollContainerRef} className='galleryStudio'>
-      <TextCard title={textCard01.title} description1={textCard01.desc1} description2={textCard01.desc2}/>
-      <TextCard title={textCard02.title} description1={textCard02.desc1} description2={textCard02.desc2}/>
-      {profileImages.map((item) => (
-        <ImageCard item={item} key={item.id} />
-      ))}
-      <TextCard title={textCard03.title} description1={textCard03.desc1} description2={textCard02.desc2}/>
-      <TextCard title={textCard04.title} description1={textCard04.desc1} description2={textCard02.desc2}/>
-      
-
+    <div ref={scrollContainerRef} className="galleryStudio">
+      <TextCard
+        name={textCard01.name}
+        title={textCard01.title}
+        description1={textCard01.desc1}
+        description2={textCard01.desc2}
+        description3={textCard01.desc3}
+      />
+      <Image
+        key={profileImages[0].id}
+        src={profileImages[0].img}
+        alt={profileImages[0].desc}
+        className="image"
+        width={600}
+        height={1000}
+        placeholder="blur"
+        blurDataURL={profileImages[0].img}
+      />
+      <TextCard
+        name={textCard02.name}
+        title={textCard02.title}
+        description1={textCard02.desc1}
+        description2={textCard02.desc2}
+        description3={textCard02.desc3}
+      />
+      <Image
+        key={profileImages[1].id}
+        src={profileImages[1].img}
+        alt={profileImages[1].desc}
+        className="image"
+        width={2800}
+        height={3000}
+        placeholder="blur"
+        blurDataURL={profileImages[1].img}
+      />
+      <TextCard
+        name={textCard03.name}
+        title={textCard03.title}
+        description1={textCard03.desc1}
+        description2={textCard03.desc2}
+        description3={textCard03.desc3}
+      />
     </div>
   );
-};
+}
 
 export default GalleryStudio;

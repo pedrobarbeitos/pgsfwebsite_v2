@@ -7,7 +7,7 @@
   }
 }
 
-.galleryStudio {
+.galleryProcess {
   display: flex;
   min-height: 550px;
   height: 100%;
@@ -25,14 +25,14 @@
 
 .image {
   position: relative;
-  height: 100%;
+  height: auto;
   width: auto;
   overflow: hidden;
   flex-shrink: 0;
 }
 
 @media only screen and (max-width: 900px) {
-  .galleryStudio {
+  .galleryProcess {
     width: 100%;
     height: auto;
     gap: 20px;

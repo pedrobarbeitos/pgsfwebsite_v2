@@ -1,21 +1,27 @@
 .textCard {
-    min-height: 675px;
-    max-width: 500px;
-    min-width: 450px;
-    position: relative;
-    overflow: hidden;
-    margin-right: 20px;
-    
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  min-height: 550px;
+  height: 100%;
+  min-width: 450px;
+  position: relative;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 900px) {
-    .textCard {
-      
-      min-width: 100%;
-      min-height: 100%;
-      flex-wrap: wrap;
-      flex-shrink: 1;
-      margin-right: 0px;
-    };
-
+  .textCard {
+    min-width: 100%;
+    min-height: 100%;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    margin-right: 0px;
   }
+}
+
+// @media only screen and (max-height: 800px) {.textCard { min-width: 475px };}
+// @media only screen and (max-height: 750px) {.textCard { min-width: 500px };}
+// @media only screen and (max-height: 700px) {.textCard { min-width: 550px };}
+// @media only screen and (max-height: 650px) {.textCard { min-width: 600px };}
+// @media only screen and (max-height: 600px) {.textCard { min-width: 675px };}
+// @media only screen and (max-height: 550px) {.textCard { min-width: 750px };}
