@@ -9,6 +9,10 @@
 
 .galleryContainer {
     display: flex;
+    min-height: 400px;
+    max-height: 700px;
+    margin-bottom: 20px;
+    background-color: blue;
     gap: 20px;
     align-content: flex-start;
     position: relative;
@@ -20,6 +24,8 @@
     
 }
 
+
+
 @media only screen and (max-width: 900px) {
     .galleryContainer {
       
@@ -27,6 +33,16 @@
       flex-wrap: wrap;
       overflow-y: auto;
       overflow: hidden;
+      
+    }
+
+    .galleryContainer .img{
+      
+
+      flex-shrink: 1;
+      min-width: 100%;
+      flex-wrap: wrap;
+      flex-shrink: 1;
       
     }
   }
