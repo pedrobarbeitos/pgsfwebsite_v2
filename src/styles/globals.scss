@@ -15,7 +15,7 @@
 }
 
 html {
-  height: 100vh;
+  height: 100svh;
   font-smooth: always;
   cursor: none;
   animation: fadeInAnimation ease 2s;
@@ -30,7 +30,6 @@ body {
   margin-right: 20px;
   margin-left: 20px;
   height: 100%;
-  height: -webkit-fill-available;
   position: relative;
   box-sizing: border-box;
 }
