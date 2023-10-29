@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./GalleryStudio.scss";
 import TextCard from "../TextCard/TextCard";
+import ContactCard from "../ContactCard/ContactCard";
 import Image from "next/image";
 
 const profileImages = [
@@ -140,6 +141,7 @@ function GalleryStudio() {
         description2={textCard03.desc2}
         description3={textCard03.desc3}
       />
+      <ContactCard />
     </div>
   );
 }
