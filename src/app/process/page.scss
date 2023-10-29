@@ -1,0 +1,19 @@
+.containerMain {
+  width: 100%;
+  height: calc(100% - 85px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  cursor: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .containerMain {
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow: hidden;
+  }
+}
