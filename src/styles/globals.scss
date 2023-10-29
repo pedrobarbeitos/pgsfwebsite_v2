@@ -15,7 +15,7 @@
 }
 
 html {
-  height: 100vh;
+  height: -webkit-fill-available;
   font-smooth: always;
   cursor: none;
   animation: fadeInAnimation ease 2s;
