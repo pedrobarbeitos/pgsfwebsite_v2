@@ -15,7 +15,7 @@
 }
 
 html {
-  height: 100%;
+  height: 100vh;
   font-smooth: always;
   cursor: none;
   animation: fadeInAnimation ease 2s;
@@ -29,7 +29,7 @@ body {
   color: black;
   margin-right: 20px;
   margin-left: 20px;
-  height: -webkit-fill-available;
+  height: 100%;
   position: relative;
   box-sizing: border-box;
 }
