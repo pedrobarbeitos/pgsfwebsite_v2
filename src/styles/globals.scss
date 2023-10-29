@@ -17,7 +17,6 @@
 html {
   height: 100svh;
   font-smooth: always;
-  cursor: none;
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
@@ -37,12 +36,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  cursor: none;
 }
 
 a:hover {
   color: rgb(167, 164, 164);
-  cursor: none;
 }
 
 h1 {

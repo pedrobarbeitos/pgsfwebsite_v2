@@ -5,10 +5,10 @@ import "./Gallery.scss";
 import Image from "next/image";
 
 const images = [
-  { id: 1, img: "/A01.jpg", desc: "Casa em Viana Photo 01 " },
-  { id: 2, img: "/A02.jpg", desc: "Casa em Viana Photo 02 " },
-  { id: 3, img: "/A03.jpg", desc: "Casa em Viana Photo 03 " },
-  { id: 4, img: "/A04.jpg", desc: "Casa em Viana Photo 04 " },
+  { id: 1, img: "/A01.jpg", desc: "House in Viana do Castelo Photo 01 " },
+  { id: 2, img: "/A02.jpg", desc: "House in Viana do Castelo Photo 02 " },
+  { id: 3, img: "/A03.jpg", desc: "House in Viana do Castelo Photo 03 " },
+  { id: 4, img: "/A04.jpg", desc: "House in Viana do Castelo Photo 04 " },
   { id: 5, img: "/A05.jpg", desc: "Ilfracombe Avenue" },
 ];
 

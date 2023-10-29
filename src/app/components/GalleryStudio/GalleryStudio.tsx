@@ -111,8 +111,8 @@ function GalleryStudio() {
         src={profileImages[0].img}
         alt={profileImages[0].desc}
         className="image"
-        width={600}
-        height={1000}
+        width={2800}
+        height={3000}
         placeholder="blur"
         blurDataURL={profileImages[0].img}
       />

@@ -1,30 +1,27 @@
 .navbar {
-    position: relative;
-    height: 40 px;
-    min-height: 45px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    font-size: 20px;
-    border-bottom: 2px solid;
-    cursor: none;
-    
+  position: relative;
+  height: 40 px;
+  min-height: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  font-size: 20px;
+  border-bottom: 2px solid;
 }
 
 .navbarLeft {
-    position: relative;
-    display: flex;
-    gap: 10px;
-    font-size: inherit;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  font-size: inherit;
 }
 
 .navbarRight {
-    position: relative;
-    display: flex;
-    gap: 10px;
-    font-size: inherit;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  font-size: inherit;
 }
-
