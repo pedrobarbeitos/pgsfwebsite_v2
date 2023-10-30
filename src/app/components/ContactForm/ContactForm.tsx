@@ -7,6 +7,7 @@ import { z } from "zod";
 import { ContactFormSchema } from "../../lib/schema";
 import { sendEmail } from "../../_actions";
 import { toast } from "sonner";
+import "./ContactForm.scss";
 
 export type ContactFormInputs = z.infer<typeof ContactFormSchema>;
 
@@ -36,16 +37,9 @@ export default function ContactForm() {
   };
 
   return (
-    <form
-      onSubmit={handleSubmit(processForm)}
-      className="mx-auto flex flex-1 flex-col gap-4 text-gray-600 sm:w-1/2 lg:w-1/3"
-    >
+    <form onSubmit={handleSubmit(processForm)} className="form">
       <div>
-        <input
-          placeholder="name"
-          className="w-full rounded-lg"
-          {...register("name")}
-        />
+        <input placeholder="name" className="nameInput" {...register("name")} />
         {errors.name?.message && (
           <p className="ml-1 mt-1 text-sm text-red-400">
             {errors.name.message}
@@ -56,13 +50,11 @@ export default function ContactForm() {
       <div>
         <input
           placeholder="email"
-          className="w-full rounded-lg"
+          className="emailInput"
           {...register("email")}
         />
         {errors.email?.message && (
-          <p className="ml-1 mt-1 text-sm text-red-400">
-            {errors.email.message}
-          </p>
+          <p className="errorMessage">{errors.email.message}</p>
         )}
       </div>
 
@@ -70,20 +62,17 @@ export default function ContactForm() {
         <textarea
           rows={5}
           cols={5}
-          placeholder="message"
-          className="w-full rounded-lg"
+          placeholder="project description"
+          className="messageInput"
           {...register("message")}
         />
         {errors.message?.message && (
-          <p className="ml-1 text-sm text-red-400">{errors.message.message}</p>
+          <p className="errorMessage">{errors.message.message}</p>
         )}
       </div>
 
-      <button
-        disabled={isSubmitting}
-        className="rounded-lg border border-black bg-black py-2.5 font-medium text-white transition-colors hover:bg-black/80 disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        {isSubmitting ? "Submitting..." : "Submit"}
+      <button disabled={isSubmitting} className="submitButton">
+        {isSubmitting ? "Submitting..." : "Send message"}
       </button>
     </form>
   );
