@@ -141,6 +141,17 @@ function GalleryStudio() {
         description2={textCard03.desc2}
         description3={textCard03.desc3}
       />
+      <Image
+        key={profileImages[1].id}
+        src={profileImages[1].img}
+        alt={profileImages[1].desc}
+        className="image"
+        width={2800}
+        height={3000}
+        placeholder="blur"
+        blurDataURL={profileImages[1].img}
+      />
+
       <ContactCard />
     </div>
   );

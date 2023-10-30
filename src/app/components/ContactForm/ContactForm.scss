@@ -34,10 +34,15 @@
 }
 
 .submitButton {
-  color: white;
-
   height: 40px;
   font-size: 20px;
   font-weight: 400;
   border: none;
+  border: 2px solid black;
+  background-color: white;
+}
+
+.submitButton:hover {
+  background-color: black;
+  color: white;
 }
