@@ -3,6 +3,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./Gallery.scss";
 import Image from "next/image";
+import ContactCard from "../ContactCard/ContactCard";
 
 const images = [
   { id: 1, img: "/A01.jpg", desc: "House in Viana do Castelo Photo 01 " },
@@ -82,6 +83,7 @@ function Gallery() {
           blurDataURL={item.img}
         />
       ))}
+      <ContactCard />
     </div>
   );
 }
