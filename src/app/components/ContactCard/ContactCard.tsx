@@ -15,7 +15,12 @@ function ContactCard({}: Props) {
 
       <h2>
         We are an approachable studio and enjoy the opportunity to discuss any
-        potential projects and collaborations. Please get in touch at{" "}
+        potential projects and collaborations.
+      </h2>
+      <br></br>
+      <h2>
+        If you’d like to discuss how we can work together, please get in touch
+        at{" "}
         <b>
           <a href="mailto: info@pgsfarchitects.com">info@pgsfarchitects.com</a>
         </b>
@@ -23,6 +28,8 @@ function ContactCard({}: Props) {
       </h2>
       <br></br>
       <br></br>
+      <br></br>
+
       <ContactForm />
     </div>
   );

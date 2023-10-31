@@ -60,7 +60,7 @@ export default function ContactForm() {
 
       <div>
         <textarea
-          rows={2}
+          rows={5}
           cols={5}
           placeholder="project description"
           className="messageInput"

@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./GalleryProcess.scss";
 import TextCard from "../TextCard/TextCard";
 import Image from "next/image";
+import ContactCard from "../ContactCard/ContactCard";
 
 const profileImages = [
   { id: 51, img: "/A51.jpg", desc: "Sara profile picture " },
@@ -198,6 +199,7 @@ function GalleryStudio() {
         placeholder="blur"
         blurDataURL={profileImages[0].img}
       />
+      <ContactCard />
     </div>
   );
 }

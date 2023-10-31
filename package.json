@@ -9,11 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "next": "^14.0.0",
     "normalize.css": "^8.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sass": "^1.69.3"
+    "react-hook-form": "^7.47.0",
+    "resend": "^1.1.0",
+    "sass": "^1.69.3",
+    "sonner": "^1.0.3",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
