@@ -3,83 +3,66 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./GalleryProcess.scss";
 import TextCard from "../TextCard/TextCard";
-import Image from "next/image";
 import ContactCard from "../ContactCard/ContactCard";
-
-const profileImages = [
-  { id: 51, img: "/A51.jpg", desc: "Sara profile picture " },
-  { id: 52, img: "/A52.jpg", desc: "Pedro profile picture " },
-];
 
 const textCard50 = {
   name: "our process",
   title: "",
-  desc1:
-    "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations.",
+  desc1: "",
   desc2:
-    "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away.",
+    "We provide architectural services based on the RIBA Schedule of Works. You can scroll through this page to better understand what a building project may entail and the services we can offer. We also provide one-off packages, including interior design and bespoke furniture design. Every project is unique, so this process can be scaled up or down, depending on your needs.",
   desc3:
-    "We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
+    "Operating across London from our studio in Notting Hill, we are an ambitious and driven team, striving to ensure that each project is as enjoyable and successful as the last. We are an approachable studio and enjoy the opportunity to discuss any potential projects and collaborations. Do not hesitate to get in touch if you would like to discuss working together.",
 };
 
 const textCard51 = {
   name: "Stage 1",
-  title: "Concept Design",
+  title: "Preparation and brief",
   desc1: "",
   desc2:
-    "Sara founded PGSF Architects with Pedro in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+    "The design process begins with a meeting at your property. We will listen to your ideas and expectations and help you define a brief. A variety of design ideas will be put forward, including organisation of spaces, qualities of natural light and material finishes. We will help clarify your intentions and discuss alternative approaches for your project.",
   desc3:
-    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+    "We will commission an architectural survey on your property so we can have a rigorous base of drawings to work with and will also assess any soil or structural investigations required. This stage includes advising on the need for other consultants, from Surveyors to Structural Engineers.  Your budget will be discussed and agreed.",
 };
 
 const textCard52 = {
-  name: "Stage 2",
-  title: "Concept Design",
+  name: "Stage 2 & 3",
+  title: "Concept Design and planning",
   desc1: "",
   desc2:
-    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+    "We believe in a collaborative design process and we will discuss each aspect of the proposal in detail with you as the design develops. Weekly meetings will take place during this stage as we provide you with drawings, material samples, virtual and physical models that illustrate the qualities of your project and enable you to clearly envisage ideas.",
   desc3:
-    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+    "When the project reaches the desired objectives a Plannning Application will be submitted to your local council. For smaller projects there is usually an eight week determination period, in which time the planners will consult with neighbours and relevant bodies. Other consents may be required, depending on the scope of the project.",
 };
 
 const textCard53 = {
-  name: "Stage 3",
-  title: "Concept Design",
+  name: "Stage 4",
+  title: "Technical Design",
   desc1: "",
   desc2:
-    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+    "At this stage we will have full planning consent from the local authorities. We will produce a drawing package that will enable exact prices to be provided for construction. A building regulations package will be submitted to an approved inspector who will certify compliance. ",
   desc3:
-    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+    "We will advise on the selection of an appropriate building contract for the works, and explain the process of entering into a building contract. Tender documents will be prepared to supply to contractors for pricing.  Contractors will be invited to tender, allowing a period of 4 weeks to review the documents and return completed tender submissions. We will advise on the selection of the best contractor. ",
 };
 
 const textCard54 = {
-  name: "Stage 4",
-  title: "Concept Design",
-  desc1: "",
+  name: "Stage 5",
+  title: "Construction",
+  desc1: " ",
   desc2:
-    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+    "A pre-contract meeting will be arranged with the selected contractor/builder to discuss the project in detail and to present the building contract for signatures. Once all parts are in agreement a full set of construction drawings will be issued to the contractor and work will begin on site. We will deal with all queries and deliver formal Architect's Instructions to the contractor. ",
   desc3:
-    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+    "At regular intervals we will visit site to inspect all works, to ensure that it is completed to the required standard. Once this is agreed, we will certify the work completed and the sums due to the contractor. Site progress Valuations will normally happen every two weeks, with normal site visits happening at least once a week.",
 };
 
 const textCard55 = {
   name: "Stage 5",
-  title: "Concept Design",
+  title: "Handover",
   desc1: "",
   desc2:
-    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+    "A 5% sum is typically retained until the end of the project. When we are completely satisfied with the finished works, we will issue an architect's practical completion certificate which transfers possession of the building back to the client. At this stage the rectification and defects period will begin.",
   desc3:
-    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
-};
-
-const textCard56 = {
-  name: "Stage 6",
-  title: "Concept Design",
-  desc1: "",
-  desc2:
-    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
-  desc3:
-    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+    "This is typically a 6 month period in which the contractor is instructed to return to rectify any relevant issues that may arise. Once the final certificate is issued at the end of this period the remaining retention sum of 5% is paid to the contractor. We reserve the right to photograph the property and the finished works for our record but we will never expose or publish any images without your consent.",
 };
 
 function GalleryStudio() {
@@ -181,23 +164,6 @@ function GalleryStudio() {
         description1={textCard55.desc1}
         description2={textCard55.desc2}
         description3={textCard55.desc3}
-      />
-      <TextCard
-        name={textCard56.name}
-        title={textCard56.title}
-        description1={textCard56.desc1}
-        description2={textCard56.desc2}
-        description3={textCard56.desc3}
-      />
-      <Image
-        key={profileImages[0].id}
-        src={profileImages[0].img}
-        alt={profileImages[0].desc}
-        className="image"
-        width={600}
-        height={1000}
-        placeholder="blur"
-        blurDataURL={profileImages[0].img}
       />
       <ContactCard />
     </div>

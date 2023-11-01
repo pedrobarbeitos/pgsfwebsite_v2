@@ -4,14 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import "./Gallery.scss";
 import Image from "next/image";
 import ContactCard from "../ContactCard/ContactCard";
-
-const images = [
-  { id: 1, img: "/A01.jpg", desc: "House in Viana do Castelo Photo 01 " },
-  { id: 2, img: "/A02.jpg", desc: "House in Viana do Castelo Photo 02 " },
-  { id: 3, img: "/A03.jpg", desc: "House in Viana do Castelo Photo 03 " },
-  { id: 4, img: "/A04.jpg", desc: "House in Viana do Castelo Photo 04 " },
-  { id: 5, img: "/A05.jpg", desc: "Ilfracombe Avenue" },
-];
+import images from "../../lib/images";
 
 function Gallery() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -80,7 +73,6 @@ function Gallery() {
           width={3000}
           height={3000}
           placeholder="blur"
-          blurDataURL={item.img}
         />
       ))}
       <ContactCard />

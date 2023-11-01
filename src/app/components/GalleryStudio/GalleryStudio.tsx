@@ -4,40 +4,33 @@ import React, { useState, useEffect, useRef } from "react";
 import "./GalleryStudio.scss";
 import TextCard from "../TextCard/TextCard";
 import ContactCard from "../ContactCard/ContactCard";
+import AboutCard from "../AboutCard/AboutCard";
 import Image from "next/image";
 
 const profileImages = [
   { id: 51, img: "/A51.jpg", desc: "Sara profile picture " },
   { id: 52, img: "/A52.jpg", desc: "Pedro profile picture " },
+  { id: 53, img: "/A53.jpg", desc: "3D model photo" },
 ];
 
-const textCard01 = {
-  name: "about us",
-  title: "",
-  desc1:
-    "We are an architecture practice run by a team of young and ambitious architects, who are passionate about creating innovative and sustainable designs that exceed our clients expectations.",
-  desc2:
-    "Our studio's work is centred around finding a considered solution to our client's brief by taking the big idea and resolving it back to its simplest form, to a point where there is nothing more to add or to take away.",
-  desc3:
-    "We strive to find the delicate balance between craft, materials, functionality, sustainability, light and nature, whilst sensitively considering each detail to create a refined design.",
-};
-
 const textCard02 = {
-  name: "sara feio",
+  name: "Sara Feio",
   title: "BArch(Hons) DipArch ARB",
-  desc1: "",
+  desc1:
+    "Sara founded PGSF Architects with Pedro in 2016, having gained extensive experience leading residential projects in Essex and London. She graduated from the University of Porto and is an ARB and OA qualified architect. ",
   desc2:
-    "Sara founded PGSF Architects with Pedro in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+    "She is particularly interested in the topic of sustainability and is determined to minimize the negative environmental impact of all our projects while carefully balancing economic and social factors.",
   desc3:
-    "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
+    "Sara has previously worked in Portugal and UK based practices where she specialised in delivering high end residential projects to an impressive level of detail. The experience and support she brings allows our clients to focus on the project outcomes, while we concentrate on the project process.",
 };
 
 const textCard03 = {
-  name: "pedro barbeitos gomes",
+  name: "Pedro Barbeitos Gomes",
   title: "BArch(Hons) DipArch ARB RIBA",
-  desc1: "",
+  desc1:
+    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect.",
   desc2:
-    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect. He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
+    " He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
   desc3:
     "He has previously worked in Austria and UK based practices where he led several projects ranging from small scale private residential work through to new-build housing developments and larger multi-unit residential schemes.",
 };
@@ -100,13 +93,7 @@ function GalleryStudio() {
 
   return (
     <div ref={scrollContainerRef} className="galleryStudio">
-      <TextCard
-        name={textCard01.name}
-        title={textCard01.title}
-        description1={textCard01.desc1}
-        description2={textCard01.desc2}
-        description3={textCard01.desc3}
-      />
+      <AboutCard />
       <Image
         key={profileImages[0].id}
         src={profileImages[0].img}
@@ -140,16 +127,6 @@ function GalleryStudio() {
         description1={textCard03.desc1}
         description2={textCard03.desc2}
         description3={textCard03.desc3}
-      />
-      <Image
-        key={profileImages[1].id}
-        src={profileImages[1].img}
-        alt={profileImages[1].desc}
-        className="image"
-        width={2800}
-        height={3000}
-        placeholder="blur"
-        blurDataURL={profileImages[1].img}
       />
 
       <ContactCard />
