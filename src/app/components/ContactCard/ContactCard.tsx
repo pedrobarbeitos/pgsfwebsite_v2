@@ -14,7 +14,7 @@ function ContactCard({}: Props) {
       </div>
 
       <h2>
-        If you&aposd like to discuss how we can work together, please get in
+        {"If you'd"} like to discuss how we can work together, please get in
         touch at{" "}
         <b>
           <a href="mailto: info@pgsfarchitects.com">info@pgsfarchitects.com</a>
