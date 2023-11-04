@@ -10,7 +10,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "PGSF",
+  title: "PGSF Architects",
   description: "London based architecture practice",
 };
 
