@@ -6,12 +6,7 @@ import TextCard from "../TextCard/TextCard";
 import ContactCard from "../ContactCard/ContactCard";
 import AboutCard from "../AboutCard/AboutCard";
 import Image from "next/image";
-
-const profileImages = [
-  { id: 51, img: "/A51.jpg", desc: "Sara profile picture " },
-  { id: 52, img: "/A52.jpg", desc: "Pedro profile picture " },
-  { id: 53, img: "/A53.jpg", desc: "3D model photo" },
-];
+import profileImages from "../../lib/profileImages";
 
 const textCard02 = {
   name: "Sara Feio",
@@ -99,10 +94,9 @@ function GalleryStudio() {
         src={profileImages[0].img}
         alt={profileImages[0].desc}
         className="image"
-        width={2800}
-        height={3000}
+        width={1500}
+        height={1500}
         placeholder="blur"
-        blurDataURL={profileImages[0].img}
       />
       <TextCard
         name={textCard02.name}
@@ -116,10 +110,9 @@ function GalleryStudio() {
         src={profileImages[1].img}
         alt={profileImages[1].desc}
         className="image"
-        width={2800}
-        height={3000}
+        width={1500}
+        height={1500}
         placeholder="blur"
-        blurDataURL={profileImages[1].img}
       />
       <TextCard
         name={textCard03.name}

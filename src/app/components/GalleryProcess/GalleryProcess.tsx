@@ -4,6 +4,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "./GalleryProcess.scss";
 import TextCard from "../TextCard/TextCard";
 import ContactCard from "../ContactCard/ContactCard";
+import profileImages from "../../lib/profileImages";
+import Image from "next/image";
 
 const textCard50 = {
   name: "our process",
@@ -56,7 +58,7 @@ const textCard54 = {
 };
 
 const textCard55 = {
-  name: "Stage 5",
+  name: "Stage 6",
   title: "Handover",
   desc1: "",
   desc2:
