@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: flex-start;
   background-color: rgb(202, 193, 182);
-  animation: fadeInAnimation ease 2s;
+  animation: fadeInAnimation ease 3s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
 }
@@ -15,9 +15,14 @@
 @media only screen and (max-width: 900px) {
   .containerModel {
     width: 100%;
-    height: calc(100svh - 85px);
+    height: calc(100svh - 105px);
     overflow-y: auto;
     overflow: hidden;
-    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .containerModel {
+    height: calc(100svh - 85px);
   }
 }
