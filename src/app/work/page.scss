@@ -1,19 +1,17 @@
-.containerModel {
+.containerMain {
   width: 100%;
   height: calc(100% - 85px);
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
 }
 
 @media only screen and (max-width: 900px) {
-  .containerModel {
+  .containerMain {
     width: 100%;
-    height: calc(100svh - 85px);
+    height: auto;
+    flex-wrap: wrap;
     overflow-y: auto;
     overflow: hidden;
   }

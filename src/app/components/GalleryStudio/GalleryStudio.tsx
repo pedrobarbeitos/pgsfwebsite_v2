@@ -23,7 +23,7 @@ const textCard03 = {
   name: "Pedro Barbeitos Gomes",
   title: "BArch(Hons) DipArch ARB RIBA",
   desc1:
-    "Pedro founded PGSF Architects with Sara in 2015 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect.",
+    "Pedro founded PGSF Architects with Sara in 2016 with extensive experience working in residential architecture in the UK. He graduated from the University of Porto and is an ARB and RIBA qualified architect.",
   desc2:
     " He has a particular interest in construction-led design. Through his close involvement in the late stages of a wide range of projects he has explored the practical and theoretical aspects of construction in great depth.",
   desc3:
