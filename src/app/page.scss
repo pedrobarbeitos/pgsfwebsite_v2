@@ -3,6 +3,7 @@
   height: calc(100% - 85px);
   position: relative;
   display: flex;
+  padding-bottom: 20px;
   flex-direction: column;
   justify-content: flex-start;
   animation: fadeInAnimation ease 3s;
@@ -16,5 +17,6 @@
     height: calc(100svh - 85px);
     overflow-y: auto;
     overflow: hidden;
+    padding-bottom: 0px;
   }
 }
