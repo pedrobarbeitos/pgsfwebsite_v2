@@ -1,11 +1,12 @@
+"use client";
 
-import './page.scss'
-import Gallery from './components/GalleryWorks/Gallery'
+import "./page.scss";
+import Model from "./components/Model/Model";
 
 export default function Home() {
   return (
-    <div className="containerMain">
-      <Gallery/> 
+    <div className="containerModel">
+      <Model />
     </div>
-  )
+  );
 }
