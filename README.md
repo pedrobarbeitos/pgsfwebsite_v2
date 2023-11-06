@@ -2,7 +2,7 @@
   wwww.pgsfarchitects.com
 </h1>
 <div align="center">
-  <img alt="Ancinet Temple Photo" src="https://i.ibb.co/PhwVJSm/temples.png" width="700" />
+  <img alt="Home Page" src="https://ibb.co/LkgYcwC" width="700" />
 </div>
 <p>
 <p/>
@@ -13,7 +13,7 @@ Website for a London based architecture practice.
 In addition to being an educational platform, Temples also functions as an online store where enthusiasts can purchase posters and t-shirts featuring their favorite ancient temples.
 </p>
 <p>
-Built with <a href="https://www.gatsbyjs.org/" target="_blank">Netx.js</a> and hosted with <a href="https://www.netlify.com/" target="_blank">Vercel</a>
+Built with <a href="https://nextjs.org/" target="_blank">Netx.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
 </p>
 
 ## Installation & Set Up
