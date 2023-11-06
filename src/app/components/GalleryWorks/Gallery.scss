@@ -21,6 +21,7 @@
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
   overflow-x: scroll;
+  overscroll-behavior: none;
   -webkit-overflow-scrolling: touch;
 }
 
