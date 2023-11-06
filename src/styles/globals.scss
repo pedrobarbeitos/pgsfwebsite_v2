@@ -20,6 +20,7 @@ html {
   animation: fadeInAnimation ease 2s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
+  overscroll-behavior: none;
 }
 
 body {
@@ -31,6 +32,7 @@ body {
   height: 100%;
   position: relative;
   box-sizing: border-box;
+  overscroll-behavior: none;
 }
 
 a {
