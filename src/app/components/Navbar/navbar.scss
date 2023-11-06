@@ -31,5 +31,9 @@
 @media only screen and (max-width: 600px) {
   .navbar {
     margin-bottom: 10px;
+    height: 30 px;
+    min-height: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
