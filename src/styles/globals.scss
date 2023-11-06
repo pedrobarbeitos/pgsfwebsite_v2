@@ -7,6 +7,12 @@
   }
 }
 
+:root {
+  --bgColor: white;
+  --textColor1: black;
+  --textColor2: rgb(146, 55, 55);
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -25,7 +31,7 @@ html {
 
 body {
   overflow-x: hidden;
-  background-color: white;
+  background-color: var(--bgColor);
   color: black;
   margin-right: 20px;
   margin-left: 20px;
@@ -38,11 +44,12 @@ body {
 a {
   text-decoration: none;
   color: inherit;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: var(--textColor1);
 }
 
 a:hover {
-  color: rgb(146, 55, 55);
+  color: var(--textColor1);
+  text-decoration: underline;
 }
 
 h1 {
@@ -72,16 +79,16 @@ h3 {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--bgColor);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: black;
+  background: var(--textColor1);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: black;
+  background: var(--textColor1);
 }
 
 @media only screen and (max-width: 900px) {

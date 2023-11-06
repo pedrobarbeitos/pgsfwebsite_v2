@@ -16,7 +16,16 @@
     flex-wrap: wrap;
     flex-shrink: 1;
     margin-right: 0px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
+    border-bottom: 2px solid;
+    padding-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .textCard {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
   }
 }
 

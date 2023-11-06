@@ -94,7 +94,7 @@ function GalleryStudio() {
         src={profileImages[0].img}
         alt={profileImages[0].desc}
         className="image"
-        width={1500}
+        width={900}
         height={1500}
         placeholder="blur"
       />
@@ -110,7 +110,7 @@ function GalleryStudio() {
         src={profileImages[1].img}
         alt={profileImages[1].desc}
         className="image"
-        width={1500}
+        width={900}
         height={1500}
         placeholder="blur"
       />

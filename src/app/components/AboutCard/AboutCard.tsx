@@ -6,7 +6,7 @@ function AboutCard() {
     <div className="textCard">
       <div className="topText">
         <h1>
-          <b>about us</b>
+          <b>About us</b>
         </h1>
       </div>
       <br></br>

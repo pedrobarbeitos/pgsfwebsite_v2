@@ -9,7 +9,7 @@ function ContactCard({}: Props) {
     <div className="contactCard">
       <div className="topText">
         <h1>
-          <b>contact us</b>
+          <b>Contact us</b>
         </h1>
       </div>
 

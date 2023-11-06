@@ -8,8 +8,8 @@ import profileImages from "../../lib/profileImages";
 import Image from "next/image";
 
 const textCard50 = {
-  name: "our process",
-  title: "",
+  name: "Our process",
+  title: "how we work",
   desc1: "",
   desc2:
     "We provide architectural services based on the RIBA Schedule of Works. You can scroll through this page to better understand what a building project may entail and the services we can offer. We also provide one-off packages, including interior design and bespoke furniture design. Every project is unique, so this process can be scaled up or down, depending on your needs.",

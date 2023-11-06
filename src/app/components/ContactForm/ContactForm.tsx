@@ -41,9 +41,7 @@ export default function ContactForm() {
       <div>
         <input placeholder="name" className="nameInput" {...register("name")} />
         {errors.name?.message && (
-          <p className="ml-1 mt-1 text-sm text-red-400">
-            {errors.name.message}
-          </p>
+          <p className="nameInput">{errors.name.message}</p>
         )}
       </div>
 
