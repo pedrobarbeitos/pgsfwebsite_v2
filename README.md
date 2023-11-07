@@ -10,7 +10,7 @@
 Website for a London based architecture practice.
 </p>
 <p>
-In addition to being an educational platform, Temples also functions as an online store where enthusiasts can purchase posters and t-shirts featuring their favorite ancient temples.
+We are a local architecture practice based in West London and run by ateam of young and ambitious architects. We work on a variety of projects, from refurbishments and extensions to newly constructed homes.
 </p>
 <p>
 Built with <a href="https://nextjs.org/" target="_blank">Netx.js</a> and hosted with <a href="https://vercel.com/" target="_blank">Vercel</a>
