@@ -2,7 +2,7 @@
   wwww.pgsfarchitects.com
 </h1>
 <div align="center">
-  <img alt="Home Page" src="https://i.ibb.co/w0QBPHK/pgsf.jpg" width="700" />
+  <img alt="Home Page" src="https://i.ibb.co/w0QBPHK/pgsf.jpg" width="100%" />
 </div>
 <p>
 <p/>
