@@ -10,7 +10,7 @@
   font-size: 15px;
   font-weight: 400;
   border: none;
-  border-top: 2px solid var(--textColor1);
+  border-bottom: 2px solid var(--textColor1);
   border-radius: 0;
   outline: none;
 }
@@ -20,18 +20,17 @@
   font-size: 15px;
   font-weight: 400;
   border: none;
-  border-top: 2px solid var(--textColor1);
+  border-bottom: 2px solid var(--textColor1);
   border-radius: 0;
   outline: none;
 }
 
 .messageInput {
   width: 100%;
-
   font-size: 15px;
   font-weight: 400;
   border: none;
-  border-top: 2px solid var(--textColor1);
+  border-bottom: 2px solid var(--textColor1);
   border-radius: 0;
   outline: none;
 }
