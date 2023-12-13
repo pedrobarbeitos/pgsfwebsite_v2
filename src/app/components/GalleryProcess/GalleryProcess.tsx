@@ -4,8 +4,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "./GalleryProcess.scss";
 import TextCard from "../TextCard/TextCard";
 import ContactCard from "../ContactCard/ContactCard";
-import profileImages from "../../lib/profileImages";
-import Image from "next/image";
+
+import Model from "../Model/Model";
 
 const textCard50 = {
   name: "Our process",
@@ -168,6 +168,7 @@ function GalleryStudio() {
         description3={textCard55.desc3}
       />
       <ContactCard />
+      <Model />
     </div>
   );
 }

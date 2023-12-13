@@ -13,7 +13,7 @@ function Navbar({}: Props) {
         </Link>
       </div>
       <div className="navbarRight">
-        <Link href="/work">work</Link>
+        <Link href="./">work</Link>
         <Link href="/studio">studio</Link>
         <Link href="/process">process</Link>
       </div>

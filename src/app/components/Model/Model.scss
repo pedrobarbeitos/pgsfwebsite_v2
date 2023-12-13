@@ -1,0 +1,18 @@
+.modelcontainer {
+  position: relative;
+  height: 100%;
+  width: auto;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+@media only screen and (max-width: 900px) {
+  .modelcontainer {
+    flex-shrink: 1;
+    width: 100%;
+    height: auto;
+    flex-wrap: wrap;
+    overflow: hidden;
+    flex-shrink: 1;
+  }
+}

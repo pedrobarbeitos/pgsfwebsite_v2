@@ -1,12 +1,15 @@
-"use client";
-
+import React from "react";
+import Gallery from "./components/GalleryWorks/Gallery";
 import "./page.scss";
-import Model from "./components/Model/Model";
 
-export default function Home() {
+type Props = {};
+
+function work({}: Props) {
   return (
-    <div className="containerModel">
-      <Model />
+    <div className="containerMain">
+      <Gallery />
     </div>
   );
 }
+
+export default work;

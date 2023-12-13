@@ -1,30 +1,18 @@
-.containerModel {
+.containerMain {
   width: 100%;
-  height: calc(100% - 105px);
+  height: calc(100% - 85px);
   position: relative;
   display: flex;
-  margin-bottom: 20px;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: var(--bgColor);
-  animation: fadeInAnimation ease 3s;
-  animation-iteration-count: 1;
-  animation-fill-mode: forwards;
-  -webkit-overflow-scrolling: touch;
-  overscroll-behavior: none;
-  overflow: hidden;
 }
 
 @media only screen and (max-width: 900px) {
-  .containerModel {
+  .containerMain {
     width: 100%;
-    height: calc(100svh - 105px);
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .containerModel {
-    height: calc(100svh - 65px);
-    margin-bottom: 0px;
+    height: auto;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    overflow: hidden;
   }
 }
