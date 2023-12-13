@@ -70,8 +70,8 @@ function Gallery() {
           src={item.img}
           alt={item.desc}
           className="image"
-          width={2000}
-          height={2000}
+          width={2500}
+          height={1875}
           placeholder="blur"
         />
       ))}
