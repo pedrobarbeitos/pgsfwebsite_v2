@@ -97,6 +97,7 @@ function GalleryStudio() {
         width={1500}
         height={2000}
         placeholder="blur"
+        priority={true}
       />
       <TextCard
         name={textCard02.name}
@@ -113,6 +114,7 @@ function GalleryStudio() {
         width={1500}
         height={2000}
         placeholder="blur"
+        priority={true}
       />
       <TextCard
         name={textCard03.name}

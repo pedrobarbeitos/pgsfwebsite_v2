@@ -73,6 +73,7 @@ function Gallery() {
           width={2500}
           height={1875}
           placeholder="blur"
+          priority={true}
         />
       ))}
       <ContactCard />
