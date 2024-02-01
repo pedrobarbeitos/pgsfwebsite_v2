@@ -28,7 +28,6 @@ const images = [
   { id: 5, img: B05, desc: "House in Viana do Castelo Photo 01 " },
   { id: 6, img: A01, desc: "House in Viana do Castelo Photo 01 " },
   { id: 7, img: A02, desc: "House in Viana do Castelo Photo 02 " },
-  { id: 8, img: A03, desc: "House in Viana do Castelo Photo 03 " },
   { id: 9, img: A04, desc: "House in Viana do Castelo Photo 04 " },
   { id: 10, img: A05, desc: "House in Viana do Castelo Photo 04" },
   { id: 11, img: A06, desc: "House in Viana do Castelo Photo 04" },
