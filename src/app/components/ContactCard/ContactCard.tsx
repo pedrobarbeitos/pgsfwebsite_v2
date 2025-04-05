@@ -17,7 +17,9 @@ function ContactCard({}: Props) {
         {"If you'd"} like to discuss how we can work together, please get in
         touch at{" "}
         <b>
-          <a href="mailto: info@pgsfarchitects.com">info@pgsfarchitects.com</a>
+          <a href="mailto: pedro@pgsfarchitects.co.uk">
+            pedro@pgsfarchitects.co.uk
+          </a>
         </b>
         . You can also leave us a message below.
       </h2>
