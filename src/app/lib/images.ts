@@ -1,4 +1,7 @@
-
+import S_01 from "../../../public/S_01.jpg";
+import S_02 from "../../../public/S_02.jpg";
+import S_03 from "../../../public/S_03.jpg";
+import S_04 from "../../../public/S_04.jpg";
 import B01 from "../../../public/B01.jpg";
 import B02 from "../../../public/B02.jpg";
 import B03 from "../../../public/B03.jpg";
@@ -21,24 +24,28 @@ import A14 from "../../../public/A14.jpg";
 
 
 const images = [
-  { id: 1, img: B01, desc: "House in Viana do Castelo Photo 01 " },
-  { id: 2, img: B02, desc: "House in Viana do Castelo Photo 01 " },
-  { id: 3, img: B03, desc: "House in Viana do Castelo Photo 01 " },
-  { id: 4, img: B04, desc: "House in Viana do Castelo Photo 01 " },
-  { id: 5, img: B05, desc: "House in Viana do Castelo Photo 01 " },
-  { id: 6, img: A01, desc: "House in Viana do Castelo Photo 01 " },
-  { id: 7, img: A02, desc: "House in Viana do Castelo Photo 02 " },
-  { id: 9, img: A04, desc: "House in Viana do Castelo Photo 04 " },
-  { id: 10, img: A05, desc: "House in Viana do Castelo Photo 04" },
-  { id: 11, img: A06, desc: "House in Viana do Castelo Photo 04" },
-  { id: 12, img: A07, desc: "House in Viana do Castelo Photo 04" },
-  { id: 13, img: A08, desc: "House in Viana do Castelo Photo 04" },
-  { id: 14, img: A09, desc: "House in Viana do Castelo Photo 04" },
-  { id: 15, img: A10, desc: "House in Viana do Castelo Photo 04" },
-  { id: 16, img: A11, desc: "House in Viana do Castelo Photo 04" },
-  { id: 17, img: A12, desc: "House in Viana do Castelo Photo 04" },
-  { id: 18, img: A13, desc: "House in Viana do Castelo Photo 04" },
-  { id: 19, img: A14, desc: "House in Viana do Castelo Photo 04" },
+  { id: 1, img: S_01, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 2, img: S_02, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 3, img: S_03, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 4, img: S_04, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 5, img: B01, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 6, img: B02, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 7, img: B03, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 8, img: B04, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 9, img: B05, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 10, img: A01, desc: "House in Viana do Castelo Photo 01 " },
+  { id: 11, img: A02, desc: "House in Viana do Castelo Photo 02 " },
+  { id: 12, img: A04, desc: "House in Viana do Castelo Photo 04 " },
+  { id: 13, img: A05, desc: "House in Viana do Castelo Photo 04" },
+  { id: 14, img: A06, desc: "House in Viana do Castelo Photo 04" },
+  { id: 15, img: A07, desc: "House in Viana do Castelo Photo 04" },
+  { id: 16, img: A08, desc: "House in Viana do Castelo Photo 04" },
+  { id: 17, img: A09, desc: "House in Viana do Castelo Photo 04" },
+  { id: 18, img: A10, desc: "House in Viana do Castelo Photo 04" },
+  { id: 19, img: A11, desc: "House in Viana do Castelo Photo 04" },
+  { id: 20, img: A12, desc: "House in Viana do Castelo Photo 04" },
+  { id: 21, img: A13, desc: "House in Viana do Castelo Photo 04" },
+  { id: 22, img: A14, desc: "House in Viana do Castelo Photo 04" },
 ];
 
 
