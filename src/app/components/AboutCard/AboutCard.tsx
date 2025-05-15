@@ -30,8 +30,8 @@ function AboutCard() {
         <h2>81 Shirland Road, London W9 2EL</h2>
         <h2>
           <b>
-            <a href="mailto: barbeitos.pedro@gmail.com">
-              barbeitos.pedro@gmail.com
+            <a href="mailto: pedro@pgsfarchitects.co.uk">
+              pedro@pgsfarchitects.co.uk
             </a>
           </b>
         </h2>
